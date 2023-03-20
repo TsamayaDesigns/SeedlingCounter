@@ -26,11 +26,14 @@
 // Listen for clicks on the increment button
 // Increment the count variable when button is clicked
 // Change the id=count-el in HTML to reflect the new count
+let countEl = document.getElementById("count-el");
 let count = 0
 
 function increment() {
     count = count + 1;
-    document.getElementById("count-el").innerHTML = count;
+    // countEl.innerHTML = count;
+    countEl.innerText = count;
+    // countEl.textContent = count;
 }
 
 
